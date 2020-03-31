@@ -27,5 +27,27 @@ Upcoming features (not yet implemented) include:
   <img src="https://i.imgur.com/GZXN2tW.png" alt="Example Observation"/>
 </p>
 
+### Usage
+```
+$ python simpleReader.py -h
+usage: simpleReader.py [-h] -f FILE -p PERIOD [-d DM] [-n NBINS]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE
+  -p PERIOD, --period PERIOD
+  -d DM, --dm DM, --DM DM
+  -n NBINS, --nbins NBINS, --nBins NBINS
+```
+
+To analyze an observation, run:
+```
+python simpleReader.py -f OBS_FILENAME --period FOLDING_PERIOD --nBins NUMBER_OF_BINS
+```
+Example:
+```
+python simpleReader.py -f J0332+5434_194_chB.sdf --period 0.71459 --nBins 200
+```
+
 ### Credits
 This tool is developed by [Apostolos Spanakis-Misirlis](mailto:0xcoto@protonmail.com) and [Prof. Daniel R. Marlow](mailto:marlow@princeton.edu). We would like to acknowledge the help provided by [Norman C. Jarosik](mailto:jarosik@Princeton.EDU) regarding the acquisition of the data.
