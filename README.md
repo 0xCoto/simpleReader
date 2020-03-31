@@ -50,4 +50,4 @@ python simpleReader.py -f J0332+5434_194_chB.sdf --period 0.71459 --nBins 200
 ```
 
 ### Credits
-This tool is developed by [Apostolos Spanakis-Misirlis](mailto:0xcoto@protonmail.com) and [Prof. Daniel R. Marlow](mailto:marlow@princeton.edu). We would like to acknowledge the help provided by [Norman C. Jarosik](mailto:jarosik@Princeton.EDU) regarding the acquisition of the data.
+This tool is developed by [Apostolos Spanakis-Misirlis](mailto:0xcoto@protonmail.com) and [Prof. Daniel R. Marlow](mailto:marlow@princeton.edu). We would like to acknowledge the help provided by [Norman C. Jarosik](mailto:jarosik@Princeton.EDU) regarding the software used for the acquisition of the data.
