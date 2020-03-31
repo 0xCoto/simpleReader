@@ -13,7 +13,7 @@ Upcoming features (not yet implemented) include:
 </p>
 
 - **Dispersion measure determination** (e.g. by brute-forcing DM values after the appropriate topocentric period has been applied (for appropriate pulse folding), and/or with another less computationally-expensive algorithm (TBD))
-- **Incoherent de-dispersion** (by appropriately delaying each frequency channel on the dynamic spectrum (waterfall):
+- **Incoherent de-dispersion** (by appropriately delaying each frequency channel on the dynamic spectrum (waterfall)):
 <p align="center">
   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/361615c3d3a7874fd98554fb9dbe22cb8267ea36" alt="DM Equation"/>
 </p>
