@@ -28,4 +28,4 @@ Upcoming features (not yet implemented) include:
 </p>
 
 ### Credits
-This tool is built by [Apostolos Spanakis-Misirlis](mailto:0xcoto@protonmail.com) and [Prof. Daniel R. Marlow](mailto:marlow@princeton.edu).
+This tool is developed by [Apostolos Spanakis-Misirlis](mailto:0xcoto@protonmail.com) and [Prof. Daniel R. Marlow](mailto:marlow@princeton.edu). We would like to acknowledge the help provided by [Norman C. Jarosik](mailto:jarosik@Princeton.EDU) regarding the acquisition of the data.
