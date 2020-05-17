@@ -9,7 +9,7 @@
 Upcoming features (not yet implemented) include:
 - **Period determination** (e.g. by taking the Fourier transformation of the time series of the observation in the post-dedispersion state and/or by brute-forcing values around the topocentric period (obtained using e.g. TEMPO) or the barycentric period (taken by e.g. the ATNF Pulsar Database). This can also be done by measuring the distance between individual pulses in the time series, although this is only applicable to observations where the invidivdual-pulse-to-noise ratio is high (i.e. pulsars with a high flux density at 1400 MHz like PSR B0329+54 (J0332+5434)). The code for this has already been written for the Green Bank 20m Telescope and tested successfully:
 <p align="center">
-  <img src="https://i.imgur.com/e2FTa5Q.png" alt="Proof of concept"/>
+<img src="https://i.imgur.com/e2FTa5Q.png" alt="Proof of concept"/>
 </p>
 
 - **Dispersion measure determination** (e.g. by brute-forcing DM values after the appropriate topocentric period has been applied (for appropriate pulse folding), and/or with another less computationally-expensive algorithm (TBD))
