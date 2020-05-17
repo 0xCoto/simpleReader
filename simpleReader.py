@@ -1,5 +1,5 @@
 # A simple program to read and plot pulsar data files
-# The program uses a manually entered period and phase offset, rather than tempo.
+# The program uses a manually entered period and phase offset, rather than TEMPO.
 # It does not accommodate the possibilty of of reading a file while it is
 # being written.
 
