@@ -30,7 +30,7 @@ The period-search algorithm and the plotting script can be found in `psearch.py`
 
 ### Example observation of PSR B0329+54 (J0332+5434) using simpleReader
 <p align="center">
-  <img src="https://i.imgur.com/GZXN2tW.png" alt="Example Observation"/>
+  <img src="https://i.imgur.com/3zknvDu.png" alt="Example Observation"/>
 </p>
 
 ### Usage
