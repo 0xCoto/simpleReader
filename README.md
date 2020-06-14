@@ -26,6 +26,8 @@ The period-search algorithm and the plotting script can be found in `psearch.py`
 
 (code will borrow [lines 7-18](https://github.com/0xCoto/PSR-Toolkit/blob/master/psr_toolkit.py#L7-L18) in [`psr_toolkit.py`](https://github.com/0xCoto/PSR-Toolkit/blob/master/psr_toolkit.py) from [`PSR-Toolkit`](https://github.com/0xCoto/PSR-Toolkit))
 
+- - **Incoherent de-dispersion update:** An incoherent-dedispersion algorithm has been applied to `simpleReader.py`. Both the un-de-dispersed and de-dispersed pulse profiles are shown plotted. The data are de-dispersed with a user-defined DM.
+
 - (More functionalities to be added soon)
 
 ### Example observation of PSR B0329+54 (J0332+5434) using simpleReader
