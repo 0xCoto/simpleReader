@@ -1,7 +1,7 @@
 ### NOTE: This work is currently under development and requires further documentation.
 
 # simpleReader
-**simpleReader** is the software used for the analysis of pulsar data obtained with the ISEC TLM-18 Telescope. Unlike other tools like PRESTO (which definitely offers a richer variety of plots), it calculates and displays the average spectrum of the observation, which makes RFI detection easier. Most of the data processing is carried out using [`NumPy`](https://numpy.org/) arrays, which makes the algorithms run faster, with a relatively low computational expense. The two main functionalities are **epoch folding**, **S/N detection**, **visual indication of the pulse width/DM**, **Power vs Frequency vs Phase**, and **automatic pulse phase detection**, which will be useful for glitch detection in the near future (although a method for pulse phase calibration shall be investigated in order to account for imperfections in the timing accuracy of the instrumentation of the telescope (particularly the superheterodyne receiver)). **Power vs Frequency vs Time** (subtracts data unassociated with the pulsar pulses) is already built, and will soon be implemented. PoC example:
+**simpleReader** is the software used for the analysis of pulsar data obtained with the ISEC TLM-18 Telescope. Unlike other tools like PRESTO (which definitely offers a richer variety of plots), it calculates and displays the average spectrum of the observation, which makes RFI detection easier. Most of the data processing is carried out using [`NumPy`](https://numpy.org/) arrays, which makes the algorithms run faster, with a relatively low computational expense. The two main functionalities are **incoherent de-dispersion**, **epoch folding**, **S/N detection**, **visual indication of the pulse width/DM**, **Power vs Frequency vs Phase**, and **automatic pulse phase detection**, which will be useful for glitch detection in the near future (although a method for pulse phase calibration shall be investigated in order to account for imperfections in the timing accuracy of the instrumentation of the telescope (particularly the superheterodyne receiver)). **Power vs Frequency vs Time** (subtracts data unassociated with the pulsar pulses) is already built, and will soon be implemented. PoC example:
 <p align="center">
   <img src="https://i.imgur.com/xE3SMTd.png" alt="Power vs Frequency vs Time"/>
 </p>
@@ -11,6 +11,12 @@ Upcoming features (not yet implemented) include:
 <p align="center">
 <img src="https://i.imgur.com/e2FTa5Q.png" alt="Proof of concept"/>
 </p>
+
+- - **P-search update:** An initial period determination algorithm has been composed for the pulsar monitoring project conducted by TLM-18. It works by brute-forcing a list of periods (e.g. barycentric period ± 0.1 sec with a user-defined step) and seeing where the S/N maximizes:
+<p align="center">
+<img src="https://i.imgur.com/OLRfRDL.png" alt="Proof of concept"/>
+</p>
+The period-search algorithm and the plotting script can be found in `psearch.py` and `period_plot.py` respectively.
 
 - **Dispersion measure determination** (e.g. by brute-forcing DM values after the appropriate topocentric period has been applied (for appropriate pulse folding), and/or with another less computationally-expensive algorithm (TBD))
 - **Incoherent de-dispersion** (by appropriately delaying each frequency channel on the dynamic spectrum (waterfall)):
