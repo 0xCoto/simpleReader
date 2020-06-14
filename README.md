@@ -16,6 +16,7 @@ Upcoming features (not yet implemented) include:
 <p align="center">
 <img src="https://i.imgur.com/OLRfRDL.png" alt="Proof of concept"/>
 </p>
+
 The period-search algorithm and the plotting script can be found in `psearch.py` and `period_plot.py` respectively.
 
 - **Dispersion measure determination** (e.g. by brute-forcing DM values after the appropriate topocentric period has been applied (for appropriate pulse folding), and/or with another less computationally-expensive algorithm (TBD))
